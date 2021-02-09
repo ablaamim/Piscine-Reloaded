@@ -366,19 +366,31 @@ void ft_swap(int *a, int *b)
 
 2.1 to test this program:
 ```c
-int main()
+int main(void)
 {
-  int a = 41;
-  int b = 11;
-  int *div;
-  int *mod;
+	int a;
+	int b;
+	int div;
+	int mod;
+	int *pdiv;
+	int *pmod;
 
-  ft_div_mod(a, b, div, mod);
-
-  printf("%d\n", *div);
-  printf("%d\n", *mod);
-
-  return(0);
+	a = 6;
+	b = 2;
+	div = 0;
+	mod  = 0;
+	pdiv = &div;
+	pmod = &mod;
+	ft_putnbr(a);
+		ft_putchar('\n');
+	ft_putnbr(b);
+		ft_putchar('\n');
+	ft_div_mod(a, b, pdiv, pmod);
+	ft_putnbr(div);
+		ft_putchar('\n');
+	ft_putnbr(mod);
+		ft_putchar('\n');
+	return(0);
 }
 ```
 
