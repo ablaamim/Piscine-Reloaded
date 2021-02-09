@@ -343,7 +343,7 @@ void ft_swap(int *a, int *b)
 
 > This function divides parameters a by b and stores the result in the int pointed by div. It also stores the remainder of the division of a by b in the int pointed by mod.
 
-2. About div & mod [standart operation in C](https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B)
+2. About div & mod [standard operation in C](https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B)
 
 | Operator name	| Syntax        | C++ prototype examples |
 | ------------- |:-------------:| ----------------------:|
