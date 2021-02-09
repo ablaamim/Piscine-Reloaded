@@ -1,12 +1,12 @@
-# Piscine Reloaded
+# Piscine Reloaded :
 #### This is the Piscine Reloaded project @ 1337 (42 Network).
 
 Review the basics with a set of well-picked assignments from the selection Piscine.
 
-### Objectives
+### Objectives :
 > - Reviewing.
 > - Basics of programming.
-### Skills
+### Skills :
 > - Imperative programming
 > - Unix
 > - Rigor
@@ -45,7 +45,7 @@ Review the basics with a set of well-picked assignments from the selection Pisci
 > - Ex26. int ft_count_if(char \*\*tab, int(\*f)(char\*)); Returns number of elements in the array that returns 1.
 > - Ex27. Write a program called ft_display_file that displays content of file passed in argument on STDOUT. Makefile with all/clean/fclean. Malloc FORBIDDEN. Errors display on STDERR.
 
-# Guide through problems, EXPLAINED!
+# Guide through problems, all explained!
 
 ## Exercise 00 : Oh yeah, mooore...
 
