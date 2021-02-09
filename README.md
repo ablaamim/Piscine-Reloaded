@@ -144,7 +144,7 @@ $>
 
 ```ifconfig en0 | grep ether -w | awk -F " " '{ print $2 }'```
 
-## IX Exercise 05 : Can you create it ?
+## Exercise 05 : Can you create it ?
 
 ---
 1. Result:
