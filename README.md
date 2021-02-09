@@ -463,7 +463,7 @@ int	main(void)
 }
 
 ```
-## XVII Exercise 13 : ft_recursive_factorial
+## Exercise 13 : ft_recursive_factorial
 
 1. Task:
 
