@@ -43,7 +43,7 @@ Review the basics with a set of well-picked assignments from the selection Pisci
 
 # Guide through problems, EXPLAINED!
 
-## IV Exercise 00 : Oh yeah, mooore...
+## Exercise 00 : Oh yeah, mooore...
 
 1. Task:
 
@@ -188,7 +188,7 @@ void ft_print_alphabet(void)
 }
 ```
 
-## XI Exercise 07 : ft_print_numbers
+## Exercise 07 : ft_print_numbers
 
 1. Task:
 
@@ -214,7 +214,7 @@ void ft_print_numbers(void)
 }
 ```
 
-## XII Exercise 08: ft_is_negative
+## Exercise 08: ft_is_negative
 
 1. Task:
 
@@ -235,7 +235,7 @@ void ft_is_negative(int n)
 }
 ```
 
-## XIII Exercise 09 : ft_ft 
+## Exercise 09 : ft_ft 
 
 1. Task:
 
@@ -282,7 +282,7 @@ void ft_ft(int *nbr)
 }
 ```
 
-## XIV Exercise 10 : ft_swap
+## Exercise 10 : ft_swap
 
 1. Task:
 
@@ -331,7 +331,7 @@ void ft_swap(int *a, int *b)
 }
 ```
 
-## XV Exercise 11 : ft_div_mod
+## Exercise 11 : ft_div_mod
 
 1. Task:
 
@@ -379,7 +379,7 @@ void ft_div_mod(int a, int b, int *div, int *mod)
 }
 ```
 
-## XVI Exercise 12 : ft_iterative_factorial
+## Exercise 12 : ft_iterative_factorial
 
 1. Task:
 
@@ -456,7 +456,7 @@ int ft_recursive_factorial(int nb)
 > p.s. Check this: `else if (nb < 0 || nb > 12)`, maybe is LYING?
 > p.s.s. use global value.
 
-## XVIII Exercise 14 : ft_sqrt
+## Exercise 14 : ft_sqrt
 
 1. Task:
 
@@ -494,7 +494,7 @@ int ft_sqrt(int nb)
 
 > p.s. Rememder about `int` -  ` if (nb < 0 || nb >= 32767)`
 
-## XIX Exercise 15 : ft_putstr
+## Exercise 15 : ft_putstr
 
 Classic:
 
@@ -507,7 +507,7 @@ void ft_putstr(char *str)
     write(1, str++, 1);
 }
 ```
-## XX Exercise 16 : ft_strlen
+## Exercise 16 : ft_strlen
 
 Classic:
 
@@ -538,7 +538,7 @@ int main()
 
 > p.s., don't remember about: `#include <stdio.h>`, if you want check this exercize
 
-## XXI Exercise 17 : ft_strcmp
+## Exercise 17 : ft_strcmp
 
 1. About strcmp:
 
@@ -620,7 +620,7 @@ int main()
 
 > p.s., don't remember about: `#include <stdio.h>`, if you want check this exercize
 
-## XXII Exercise 18 : ft_print_params
+## Exercise 18 : ft_print_params
 
 1. Task:
 
@@ -662,7 +662,7 @@ int main(int argc, char **argv)
 
 > p.s. - use `(argc > 1)`, remember about this!
 
-## XXIII Exercise 19 : ft_sort_params
+## Exercise 19 : ft_sort_params
 
 1. Task:
 
@@ -674,13 +674,11 @@ int main(int argc, char **argv)
 
 
 
-## CXXIV Exercise 20 : ft_strdup
-## XXV Exercise 21 : ft_range
-## XXVI Exercise 22 : ft_abs.h
-## XXVIIExercise 23 : ft_point.h
-## XXVIIIExercise 24 : Makefile
-## XXIX Exercise 25 : ft_foreach
-## XXX Exercise 26 : ft_count_if
-## XXXI Exercise 27 : display_file
-## XXXIIRendu et peer-évaluation
----
+## Exercise 20 : ft_strdup
+## Exercise 21 : ft_range
+## Exercise 22 : ft_abs.h
+## Exercise 23 : ft_point.h
+## Exercise 24 : Makefile
+## Exercise 25 : ft_foreach
+## Exercise 26 : ft_count_if
+## Exercise 27 : display_file
