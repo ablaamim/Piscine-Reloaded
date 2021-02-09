@@ -6,7 +6,7 @@
 /*   By: alaamimi <alaamimi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/27 01:40:03 by alaamimi          #+#    #+#             */
-/*   Updated: 2021/02/09 13:46:46 by Alaamimi         ###   ########.fr       */
+/*   Updated: 2021/02/09 16:44:01 by Alaamimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,13 @@ void	ft_ft(int *nbr)
 int	main(void)
 {
 	int i;
+	int *nbr;
 
 	i = 0;
+	nbr = &i;
 	ft_putnbr(i);
 	ft_putchar('\n');
-	ft_ft(&i);
+	ft_ft(nbr);
 	ft_putnbr(i);
 	ft_putchar('\n');
 	return EXIT_SUCCESS;

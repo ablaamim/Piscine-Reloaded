@@ -256,17 +256,19 @@ To test this program:
 > First we print the value of i, then print the value passed to the pointer.
 
 ```c 
-int main()
+int main(void)
 {
-  int i;
+	int i;
+	int *nbr;
 
-  i = 0;
-  ft_putnbr(i);
-  ft_putchar('\n');
-  ft_ft(&i);
-  ft_putnbr(i);
-  ft_putchar('\n');
-  return(0);
+	i = 0;
+	nbr = &i;
+	ft_putnbr(i);
+		ft_putchar('\n');
+	ft_ft(nbr);
+	ft_putnbr(i);
+		ft_putchar('\n');
+	return(0);
 }
 ```
 
@@ -304,18 +306,22 @@ void ft_ft(int *nbr)
 To test this program :
 
 ```c
-int main()
+int main(void)
 {
 	int nb1;
 	int nb2;
+	int *a;
+	int *b;
 
 	nb1 = 0;
 	nb2 = 1;
+	a = &nb1;
+	b = &nb2;
 	ft_putnbr(nb1);
 		ft_putchar('\n');
 	ft_putnbr(nb2);
 		ft_putchar('\n');
-	ft_swap(&a, &b);
+	ft_swap(a, b);
 	ft_putnbr(nb1);
 		ft_putchar('\n');
 	ft_putnbr(nb2);

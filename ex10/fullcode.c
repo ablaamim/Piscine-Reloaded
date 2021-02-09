@@ -6,7 +6,7 @@
 /*   By: Alaamimi <Alaamimi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 14:08:05 by Alaamimi          #+#    #+#             */
-/*   Updated: 2021/02/09 14:15:20 by Alaamimi         ###   ########.fr       */
+/*   Updated: 2021/02/09 16:40:47 by Alaamimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,16 +49,21 @@ int	main(void)
 {
 	int nb1;
 	int nb2;
+	int *a;
+	int *b;
 
 	nb1 = 0;
 	nb2 = 1;
+	a = &nb1;
+	b = &nb2;
 	ft_putnbr(nb1);
-	ft_putchar('\n');
+		ft_putchar('\n');
 	ft_putnbr(nb2);
-	ft_putchar('\n');
-	ft_swap(&nb1, &nb2);
+		ft_putchar('\n');
+	ft_swap(a, b);
 	ft_putnbr(nb1);
-	ft_putchar('\n');
+		ft_putchar('\n');
 	ft_putnbr(nb2);
+		ft_putchar('\n');
 	return EXIT_SUCCESS;
 }
