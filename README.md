@@ -1,9 +1,9 @@
 # Piscine Reloaded
 #### This is the Piscine Reloaded project @ 1337 (42 Network).
+Review the basics with a set of well-picked assignments from the selection Piscine.
 
 <img src = "https://sm.mashable.com/t/mashable_in/fun/t/the-here-w/the-here-we-go-again-meme-is-perfect-for-every-frustrating-s_kgv8.960.png">
 
-Review the basics with a set of well-picked assignments from the selection Piscine.
 
 ### Objectives
 > - Reviewing.
