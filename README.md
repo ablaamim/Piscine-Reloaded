@@ -104,7 +104,7 @@ $>
 > * The command line will show and erase all files found.
 > * Only one command is allowed: no ’;’ or ’&&’ or other shenanigans.
 
-1. Useful command -  `touch none{0..10}~` for create 10 file's
+1. Useful command -  `touch none{0..10}~` to create 10 files.
 2. `-name`
 > -name pattern
 >             True if the last component of the pathname being examined matches pattern.
@@ -165,7 +165,7 @@ $>
 ```c
 void ft_putchar(char c)
 {
-  write(1, &c, 1);
+	write(1, &c, 1);
 }
 ```
 
