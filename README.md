@@ -92,7 +92,7 @@ $>
 
 ```touch -h -t "06012220" test6```
 
-## V Exercise 01 : Z
+## Exercise 01 : Z
 
 ---
 1. Result:
@@ -100,7 +100,7 @@ $>
 `z[enter]
 `
 
-## VI Exercise 02 : clean
+## Exercise 02 : clean
 
 > In a file called clean place the command line that will search for all files - in the current directory as well as in its sub-directories - with a name ending by ~, or with a name that start and end by #
 > * The command line will show and erase all files found.
@@ -135,7 +135,7 @@ $>
 
 > `man awk`
 
-## VIII Exercise 04 : MAC
+## Exercise 04 : MAC
 1. [I will use grep](http://aidalinux.ru/w/Grep)
 2. `man ifconfig`
 3. `man awk`
@@ -154,7 +154,7 @@ $>
 
 > p.s. Simple - `''` or `echo 42 > '"\?$*’KwaMe’*$?\"'`
 
-## X Exercise 06 : ft_print_alphabet
+## Exercise 06 : ft_print_alphabet
 1. Task:
 
 > Create a function that displays the alphabet in lowercase, on a single line, by ascending order, starting from the letter ’a’.
