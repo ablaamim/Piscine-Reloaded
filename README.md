@@ -1,14 +1,14 @@
-# Piscine Reloaded
+# Piscine Reloaded :
 #### This is the Piscine Reloaded project @ 1337 (42 Network).
 Review the basics with a set of well-picked assignments from the selection Piscine.
 
 <img src = "https://sm.mashable.com/t/mashable_in/fun/t/the-here-w/the-here-we-go-again-meme-is-perfect-for-every-frustrating-s_kgv8.960.png">
 
 
-### Objectives
+### Objectives :
 > - Reviewing.
 > - Basics of programming.
-### Skills
+### Skills :
 > - Imperative programming
 > - Unix
 > - Rigor
@@ -292,7 +292,7 @@ ft_ft.c:14:9: warning: incompatible integer to pointer conversion passing 'int' 
 ```c
 void ft_ft(int *nbr)
 {
-  *nbr = 42;
+	*nbr = 42;
 }
 ```
 
@@ -311,21 +311,25 @@ To test this program :
 ```c
 int main()
 {
-  int nb1;
-  int nb2;
+	int nb1;
+	int nb2;
+	int *a;
+	int *b;
 
-  nb1 = 0;
-  nb2 = 1;
-  ft_putnbr(nb1);
-  ft_putchar('\n');
-  ft_putnbr(nb2);
-  ft_putchar('\n');
-  ft_swap(&a, &b);
-  ft_putnbr(nb1);
-  ft_putchar('\n');
-  ft_putnbr(nb2);
-  ft_putchar('\n');
-  return(0);
+	nb1 = 0;
+	nb2 = 1;
+	a = &nb1;
+	b = &nb2;
+	ft_putnbr(nb1);
+		ft_putchar('\n');
+	ft_putnbr(nb2);
+		ft_putchar('\n');
+	ft_swap(a, b);
+	ft_putnbr(nb1);
+		ft_putchar('\n');
+	ft_putnbr(nb2);
+		ft_putchar('\n');
+	return(0);
 }
 ```
 
