@@ -99,7 +99,7 @@ $>
 > * The command line will show and erase all files found.
 > * Only one command is allowed: no ’;’ or ’&&’ or other shenanigans.
 
-1. You remember about -  `touch none{0..10}~` for create 10 file's
+1. Useful command -  `touch none{0..10}~` for create 10 file's
 2. `-name`
 > -name pattern
 >             True if the last component of the pathname being examined matches pattern.
@@ -243,7 +243,7 @@ void ft_is_negative(int n)
 
 2. About pointers:
 
-For check pointer, write program:
+To check pointer value, write program:
 Use ft_putnbr(); function to display numbers passed as parameter.
 First we print the value of i, then print the value passed to the pointer.
 ```c 
@@ -270,7 +270,7 @@ ft_ft.c:14:9: warning: incompatible integer to pointer conversion passing 'int' 
         ^
         &
 ```
-> This message was displayed, because we did not insert a pointer to the link
+> This message was displayed, because we did not insert a pointer to the function
 
 ---
 3. Result
@@ -293,9 +293,8 @@ void ft_ft(int *nbr)
 
 2. About pointer's:
 
-Then, need understand, why I use pointers? Don't remember - `Allowed functions : None`
 
-For check result, I was used:
+To check result, we should use:
 
 ```c
 int main()
@@ -349,7 +348,7 @@ void ft_swap(int *a, int *b)
 | Division      | a / b         | `K::operator /(S b);`  |
 | Modulo        | a % b         | `R K::operator %(S b);`|
 
-2.1 For check this exercise:
+2.1 to check this exercise:
 ```c
 int main()
 {
@@ -366,7 +365,6 @@ int main()
   return(0);
 }
 ```
-> don't remember about `#include <stdio.h>`
 
 ---
 3. Result
