@@ -66,7 +66,7 @@ lrwxr-xr-x  1 login  wheel   5 Jun  1 22:20 test6 -> test0
 $>
 ```
 
-2. `man touch` is reads
+2. Check `man touch`
 
 ```
 -t      Change the access and modification times to the specified time instead of the current time of day.  The argument is of the form
@@ -83,7 +83,7 @@ $>
              If the ``CC'' and ``YY'' letter pairs are not specified, the values default to the current year.  If the ``SS'' letter pair is not specified, the
              value defaults to 0.
 ```
-
+[More details in this folder](https://github.com/Alaamimi/Piscine-Reloaded/blob/master/ex00/Readme.md)
 
 ---
 3. Result:
