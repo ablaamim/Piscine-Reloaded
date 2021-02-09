@@ -293,7 +293,6 @@ void ft_ft(int *nbr)
 
 2. About pointer's:
 
-[Watch video](https://www.youtube.com/watch?v=nIY1fBkGQq4) - it's help you.
 Then, need understand, why I use pointers? Don't remember - `Allowed functions : None`
 
 For check result, I was used:
@@ -301,10 +300,20 @@ For check result, I was used:
 ```c
 int main()
 {
-  int a	= 1;
-  int b	= 2;
+  int nb1;
+  int nb2;
 
+  nb1 = 0;
+  nb2 = 1;
+  ft_putnbr(nb1);
+  ft_putchar('\n');
+  ft_putnbr(nb2);
+  ft_putchar('\n');
   ft_swap(&a, &b);
+  ft_putnbr(nb1);
+  ft_putchar('\n');
+  ft_putnbr(nb2);
+  ft_putchar('\n');
   return(0);
 }
 ```
@@ -315,10 +324,10 @@ int main()
 ```c
 void ft_swap(int *a, int *b)
 {
-  char c;
-  c = *a;
+  int tmp;
+  tmp = *a;
   *a = *b;
-  *b = c;
+  *b = tmp;
 }
 ```
 
