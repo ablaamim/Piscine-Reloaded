@@ -1,17 +1,19 @@
-# Piscine Reloaded :
+# Piscine Reloaded
 #### This is the Piscine Reloaded project @ 1337 (42 Network).
+
+<img src = "https://sm.mashable.com/t/mashable_in/fun/t/the-here-w/the-here-we-go-again-meme-is-perfect-for-every-frustrating-s_kgv8.960.png">
 
 Review the basics with a set of well-picked assignments from the selection Piscine.
 
-### Objectives :
+### Objectives
 > - Reviewing.
 > - Basics of programming.
-### Skills :
+### Skills
 > - Imperative programming
 > - Unix
 > - Rigor
 
-### Subject :
+# Subject :
 
 > [Piscine Reloaded pdf](https://github.com/Alaamimi/Piscine-Reloaded/blob/master/piscine_reloaded.pdf)
 
@@ -45,7 +47,7 @@ Review the basics with a set of well-picked assignments from the selection Pisci
 > - Ex26. int ft_count_if(char \*\*tab, int(\*f)(char\*)); Returns number of elements in the array that returns 1.
 > - Ex27. Write a program called ft_display_file that displays content of file passed in argument on STDOUT. Makefile with all/clean/fclean. Malloc FORBIDDEN. Errors display on STDERR.
 
-# Guide through problems, all explained!
+# Guide through problems, EXPLAINED!
 
 ## Exercise 00 : Oh yeah, mooore...
 
@@ -64,9 +66,7 @@ lrwxr-xr-x  1 login  wheel   5 Jun  1 22:20 test6 -> test0
 $>
 ```
 
-> *-h flag is important!*
-
-2. Check `man touch` 
+2. `man touch` is reads
 
 ```
 -t      Change the access and modification times to the specified time instead of the current time of day.  The argument is of the form
@@ -84,6 +84,7 @@ $>
              value defaults to 0.
 ```
 
+
 ---
 3. Result:
 
@@ -97,7 +98,7 @@ $>
 `z[enter]
 `
 
-## Exercise 02 : clean
+## VI Exercise 02 : clean
 
 > In a file called clean place the command line that will search for all files - in the current directory as well as in its sub-directories - with a name ending by ~, or with a name that start and end by #
 > * The command line will show and erase all files found.
@@ -132,7 +133,7 @@ $>
 
 > `man awk`
 
-## Exercise 04 : MAC
+## VIII Exercise 04 : MAC
 1. [I will use grep](http://aidalinux.ru/w/Grep)
 2. `man ifconfig`
 3. `man awk`
@@ -142,7 +143,7 @@ $>
 
 ```ifconfig en0 | grep ether -w | awk -F " " '{ print $2 }'```
 
-## Exercise 05 : Can you create it ?
+## IX Exercise 05 : Can you create it ?
 
 ---
 1. Result:
@@ -151,7 +152,7 @@ $>
 
 > p.s. Simple - `''` or `echo 42 > '"\?$*’KwaMe’*$?\"'`
 
-## Exercise 06 : ft_print_alphabet
+## X Exercise 06 : ft_print_alphabet
 1. Task:
 
 > Create a function that displays the alphabet in lowercase, on a single line, by ascending order, starting from the letter ’a’.
@@ -164,7 +165,7 @@ $>
 ```c
 void ft_putchar(char c)
 {
-	write(1, &c, 1);
+  write(1, &c, 1);
 }
 ```
 
@@ -256,19 +257,17 @@ To test this program:
 > First we print the value of i, then print the value passed to the pointer.
 
 ```c 
-int main(void)
+int main()
 {
-	int i;
-	int *nbr;
+  int i;
 
-	i = 0;
-	nbr = &i;
-	ft_putnbr(i);
-		ft_putchar('\n');
-	ft_ft(nbr);
-	ft_putnbr(i);
-		ft_putchar('\n');
-	return(0);
+  i = 0;
+  ft_putnbr(i);
+  ft_putchar('\n');
+  ft_ft(&i);
+  ft_putnbr(i);
+  ft_putchar('\n');
+  return(0);
 }
 ```
 
@@ -306,27 +305,23 @@ void ft_ft(int *nbr)
 To test this program :
 
 ```c
-int main(void)
+int main()
 {
-	int nb1;
-	int nb2;
-	int *a;
-	int *b;
+  int nb1;
+  int nb2;
 
-	nb1 = 0;
-	nb2 = 1;
-	a = &nb1;
-	b = &nb2;
-	ft_putnbr(nb1);
-		ft_putchar('\n');
-	ft_putnbr(nb2);
-		ft_putchar('\n');
-	ft_swap(a, b);
-	ft_putnbr(nb1);
-		ft_putchar('\n');
-	ft_putnbr(nb2);
-		ft_putchar('\n');
-	return(0);
+  nb1 = 0;
+  nb2 = 1;
+  ft_putnbr(nb1);
+  ft_putchar('\n');
+  ft_putnbr(nb2);
+  ft_putchar('\n');
+  ft_swap(&a, &b);
+  ft_putnbr(nb1);
+  ft_putchar('\n');
+  ft_putnbr(nb2);
+  ft_putchar('\n');
+  return(0);
 }
 ```
 
@@ -336,10 +331,10 @@ int main(void)
 ```c
 void ft_swap(int *a, int *b)
 {
-	int tmp;
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+  int tmp;
+  tmp = *a;
+  *a = *b;
+  *b = tmp;
 }
 ```
 
@@ -363,31 +358,19 @@ void ft_swap(int *a, int *b)
 
 2.1 to test this program:
 ```c
-int main(void)
+int main()
 {
-	int a;
-	int b;
-	int div;
-	int mod;
-	int *pdiv;
-	int *pmod;
+  int a = 41;
+  int b = 11;
+  int *div;
+  int *mod;
 
-	a = 6;
-	b = 2;
-	div = 0;
-	mod = 0;
-	pdiv = &div;
-	pmod - &mod;
-	ft_putnbr(a);
-		ft_putchar('\n');
-	ft_putnbr(b);
-		ft_putchar('\n');
-	ft_div_mod(a, b, div, mod);
-	ft_putnbr(div);
-		ft_putchar('\n');
-	ft_putnbr(mod);
-		ft_putchar('\n');
-	return(0);
+  ft_div_mod(a, b, div, mod);
+
+  printf("%d\n", *div);
+  printf("%d\n", *mod);
+
+  return(0);
 }
 ```
 
@@ -397,11 +380,8 @@ int main(void)
 ```c
 void ft_div_mod(int a, int b, int *div, int *mod)
 {
-	if(b != 0)
-	{
-		*div = a / b;
-		*mod = a % b;
-	}
+  *div = a / b;
+  *mod = a % b;
 }
 ```
 
