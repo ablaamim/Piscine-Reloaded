@@ -244,13 +244,19 @@ void ft_is_negative(int n)
 2. About pointers:
 
 For check pointer, write program:
-
+Use ft_putnbr(); function to display numbers passed as parameter.
+First we print the value of i, then print the value passed to the pointer.
 ```c 
 int main()
 {
-  int i	= 42;
+  int i;
 
+  i = 0;
+  ft_putnbr(i);
+  ft_putchar('\n');
   ft_ft(&i);
+  ft_putnbr(i);
+  ft_putchar('\n');
   return(0);
 }
 ```
@@ -272,8 +278,7 @@ ft_ft.c:14:9: warning: incompatible integer to pointer conversion passing 'int' 
 ```c
 void ft_ft(int *nbr)
 {
-  int c;
-  c = *nbr;
+  *nbr = 42;
 }
 ```
 
