@@ -306,21 +306,21 @@ To test this program :
 ```c
 int main()
 {
-  int nb1;
-  int nb2;
+	int nb1;
+	int nb2;
 
-  nb1 = 0;
-  nb2 = 1;
-  ft_putnbr(nb1);
-  ft_putchar('\n');
-  ft_putnbr(nb2);
-  ft_putchar('\n');
-  ft_swap(&a, &b);
-  ft_putnbr(nb1);
-  ft_putchar('\n');
-  ft_putnbr(nb2);
-  ft_putchar('\n');
-  return(0);
+	nb1 = 0;
+	nb2 = 1;
+	ft_putnbr(nb1);
+		ft_putchar('\n');
+	ft_putnbr(nb2);
+		ft_putchar('\n');
+	ft_swap(&a, &b);
+	ft_putnbr(nb1);
+		ft_putchar('\n');
+	ft_putnbr(nb2);
+		ft_putchar('\n');
+	return(0);
 }
 ```
 
@@ -330,10 +330,10 @@ int main()
 ```c
 void ft_swap(int *a, int *b)
 {
-  int tmp;
-  tmp = *a;
-  *a = *b;
-  *b = tmp;
+	int tmp;
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 ```
 
@@ -357,19 +357,31 @@ void ft_swap(int *a, int *b)
 
 2.1 to test this program:
 ```c
-int main()
+int main(void)
 {
-  int a = 41;
-  int b = 11;
-  int *div;
-  int *mod;
+	int a;
+	int b;
+	int div;
+	int mod;
+	int *pdiv;
+	int *pmod;
 
-  ft_div_mod(a, b, div, mod);
-
-  printf("%d\n", *div);
-  printf("%d\n", *mod);
-
-  return(0);
+	a = 6;
+	b = 2;
+	div = 0;
+	mod = 0;
+	pdiv = &div;
+	pmod - &mod;
+	ft_putnbr(a);
+		ft_putchar('\n');
+	ft_putnbr(b);
+		ft_putchar('\n');
+	ft_div_mod(a, b, div, mod);
+	ft_putnbr(div);
+		ft_putchar('\n');
+	ft_putnbr(mod);
+		ft_putchar('\n');
+	return(0);
 }
 ```
 
@@ -379,8 +391,11 @@ int main()
 ```c
 void ft_div_mod(int a, int b, int *div, int *mod)
 {
-  *div = a / b;
-  *mod = a % b;
+	if(b != 0)
+	{
+		*div = a / b;
+		*mod = a % b;
+	}
 }
 ```
 
