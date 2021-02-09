@@ -49,6 +49,8 @@ Review the basics with a set of well-picked assignments from the selection Pisci
 
 # Guide through problems, EXPLAINED!
 
+<src = "https://memegenerator.net/img/instances/71416474/lets-start.jpg">
+
 ## Exercise 00 : Oh yeah, mooore...
 
 1. Task:
