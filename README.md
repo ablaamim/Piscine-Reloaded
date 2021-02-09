@@ -243,11 +243,14 @@ void ft_is_negative(int n)
 
 2. About pointers:
 
-	[Check this video about Pointers](https://www.youtube.com/watch?v=XISnO2YhnsY&ab_channel=CS50)
+> [Check this video about Pointers](https://www.youtube.com/watch?v=XISnO2YhnsY&ab_channel=CS50)
 
-To check test this program:
-Use ft_putnbr(); function to display numbers passed as parameter.
-First we print the value of i, then print the value passed to the pointer.
+To test this program:
+
+> Use ft_putnbr(); function to display numbers passed as parameter.
+
+> First we print the value of i, then print the value passed to the pointer.
+
 ```c 
 int main()
 {
