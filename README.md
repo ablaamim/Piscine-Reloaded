@@ -64,9 +64,9 @@ lrwxr-xr-x  1 login  wheel   5 Jun  1 22:20 test6 -> test0
 $>
 ```
 
-> *Remember about -h*
+> *-h flag is important!*
 
-2. `man touch` is reads
+2. Check `man touch` 
 
 ```
 -t      Change the access and modification times to the specified time instead of the current time of day.  The argument is of the form
@@ -164,7 +164,7 @@ $>
 ```c
 void ft_putchar(char c)
 {
-  write(1, &c, 1);
+	write(1, &c, 1);
 }
 ```
 
