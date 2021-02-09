@@ -11,6 +11,10 @@ Review the basics with a set of well-picked assignments from the selection Pisci
 > - Unix
 > - Rigor
 
+# Subject :
+
+> [Piscine Reloaded pdf](https://github.com/Alaamimi/Piscine-Reloaded/blob/master/piscine_reloaded.pdf)
+
 # This project consists of multiple generic functions that can be used in a lot of situations :
 > - Ex00. ls -l in folder should display specific things.
 > - Ex01. Create a file which show Z when displayed with cat command.
