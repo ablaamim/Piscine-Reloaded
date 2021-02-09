@@ -126,7 +126,7 @@ $>
 
 ```find . -name "#*" -print -delete -o -name "*#" -delete -print -o -name "*~" -delete -print```
 
-## VII Exercise 03 : find_sh
+## Exercise 03 : find_sh
 
 ---
 1. Result:
