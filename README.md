@@ -430,23 +430,39 @@ void ft_div_mod(int a, int b, int *div, int *mod)
 ```c
 int ft_iterative_factorial(int nb)
 {
-  int res;
-  int i;
+	int count;
 
-  res =	1;
-  i = 1;
-
-  if (nb >= 0 && nb <= 12)
-    {
-      while (i <= nb)
-        res *= i++;
-      return(res);
-    }
-  else
-    return(0);
+	if (count > 12)
+		return (0);
+	if (count < 0)
+		return (0);
+	count = 1;
+	while(nb >= 1)
+	{
+		count = count * nb;
+		nb--;
+	}
+	return (count);
 }
 ```
+---
+4. Test:
 
+```c
+int	main(void)
+{
+	int i;
+	i = 5;
+
+	ft_putnbr(i);
+		ft_putchar('\n');
+	ft_putnbr(ft_iterative_factorial(i));
+		ft_putchar('\n');
+	return (0);
+
+}
+
+```
 ## XVII Exercise 13 : ft_recursive_factorial
 
 1. Task:
