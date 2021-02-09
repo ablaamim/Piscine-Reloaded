@@ -278,7 +278,7 @@ ft_ft.c:14:9: warning: incompatible integer to pointer conversion passing 'int' 
 > This message was displayed, because we did not insert a pointer to the function
 
 ---
-3. Result
+3. Solution :
 
 ```c
 void ft_ft(int *nbr)
@@ -296,10 +296,8 @@ void ft_ft(int *nbr)
 > *Here’s how it should be prototyped:*
 > ``` void ft_swap(int *a, int *b);```
 
-2. About pointer's:
 
-
-To check result, we should use:
+To test this program :
 
 ```c
 int main()
@@ -323,7 +321,7 @@ int main()
 ```
 
 ---
-3. Result:
+3. Solution :
 
 ```c
 void ft_swap(int *a, int *b)
@@ -345,7 +343,7 @@ void ft_swap(int *a, int *b)
 
 > This function divides parameters a by b and stores the result in the int pointed by div. It also stores the remainder of the division of a by b in the int pointed by mod.
 
-2. About div & [standart operation in C](https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B)
+2. About div & mod [standart operation in C](https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B)
 
 | Operator name	| Syntax        | C++ prototype examples |
 | ------------- |:-------------:| ----------------------:|
@@ -353,7 +351,7 @@ void ft_swap(int *a, int *b)
 | Division      | a / b         | `K::operator /(S b);`  |
 | Modulo        | a % b         | `R K::operator %(S b);`|
 
-2.1 to check this exercise:
+2.1 to test this program:
 ```c
 int main()
 {
