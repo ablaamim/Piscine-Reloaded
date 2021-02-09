@@ -136,9 +136,8 @@ $>
 > `man awk`
 
 ## Exercise 04 : MAC
-1. [I will use grep](http://aidalinux.ru/w/Grep)
-2. `man ifconfig`
-3. `man awk`
+1. `man ifconfig`
+2. `man awk`
 
 ---
 4. Result:
