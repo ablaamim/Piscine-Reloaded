@@ -243,7 +243,7 @@ void ft_is_negative(int n)
 
 2. About pointers:
 
-https://www.youtube.com/watch?v=XISnO2YhnsY&ab_channel=CS50
+[Pointers](https://www.youtube.com/watch?v=XISnO2YhnsY&ab_channel=CS50)
 
 To check test this program:
 Use ft_putnbr(); function to display numbers passed as parameter.
@@ -432,8 +432,6 @@ int ft_iterative_factorial(int nb)
  int ft_strlen(char *str);
 ```
 
-2. Me help's watch this video:[Рекурсия. Репка и матрёшка](https://www.youtube.com/)
-
 ---
 3. Result:
 
@@ -468,8 +466,6 @@ int ft_sqrt(int nb);
 ```
 
 > Your function must return its result in less than two seconds.
-
-2. About square, watch video [Быстрое вычисление квадратных корней](https://www.youtube.com/watch?v=UvKJGxvlDt4)
 
 ---
 
