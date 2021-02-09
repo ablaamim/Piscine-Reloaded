@@ -261,7 +261,7 @@ int main()
 }
 ```
 
-Attention in terminal was:
+Common mistake:
 
 ```bash
 ft_ft.c:14:9: warning: incompatible integer to pointer conversion passing 'int' to
