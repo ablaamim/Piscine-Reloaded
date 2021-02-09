@@ -243,7 +243,7 @@ void ft_is_negative(int n)
 
 2. About pointers:
 
-[Pointers](https://www.youtube.com/watch?v=XISnO2YhnsY&ab_channel=CS50)
+	[Check this video about Pointers](https://www.youtube.com/watch?v=XISnO2YhnsY&ab_channel=CS50)
 
 To check test this program:
 Use ft_putnbr(); function to display numbers passed as parameter.
