@@ -259,17 +259,19 @@ To test this program:
 > First we print the value of i, then print the value passed to the pointer.
 
 ```c 
-int main()
+int main(void)
 {
-  int i;
+	int i;
+	int *nbr;
 
-  i = 0;
-  ft_putnbr(i);
-  ft_putchar('\n');
-  ft_ft(&i);
-  ft_putnbr(i);
-  ft_putchar('\n');
-  return(0);
+	i = 0;
+	nbr = &i;
+	ft_putnbr(i);
+		ft_putchar('\n');
+	ft_ft(nbr);
+	ft_putnbr(i);
+		ft_putchar('\n');
+	return(0);
 }
 ```
 
