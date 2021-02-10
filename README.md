@@ -49,7 +49,7 @@
 > - Ex26. int ft_count_if(char \*\*tab, int(\*f)(char\*)); Returns number of elements in the array that returns 1.
 > - Ex27. Write a program called ft_display_file that displays content of file passed in argument on STDOUT. Makefile with all/clean/fclean. Malloc FORBIDDEN. Errors display on STDERR.
 
-### Guide through problems, it all explained ;)! So dont panic .
+### Guide through problems, its all explained ;)! So don't panic .
 
 <img src = "https://memegenerator.net/img/instances/71416474/lets-start.jpg">
 
