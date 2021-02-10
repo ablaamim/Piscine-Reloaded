@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   fullcode.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Alaamimi <Alaamimi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 18:45:40 by Alaamimi          #+#    #+#             */
-/*   Updated: 2021/02/09 19:25:08 by Alaamimi         ###   ########.fr       */
+/*   Updated: 2021/02/10 13:30:35 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,25 +36,25 @@ void	ft_putnbr(int nb)
 
 int	ft_iterative_factorial(int nb)
 {
-	int count;
+	int product;
 
 	if (nb > 12)
 		return (0);
 	if (nb < 0)
 		return (0);
-	count = 1;
+	product = 1;
 	while (nb >= 1)
 	{
-		count = count * nb;
+		product = product * nb;
 		nb--;
 	}
-	return (count);
+	return (product);
 }
 
 int	main(void)
 {
 	int i;
-	i = 6;
+	i = 5;
 
 	ft_putnbr(i);
 	ft_putchar('\n');
