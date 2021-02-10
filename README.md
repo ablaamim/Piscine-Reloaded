@@ -99,6 +99,9 @@ $>
 
 `z[enter]
 `
+2. Solution :
+
+> echo "Z" > z
 
 ## Exercise 02 : clean
 
@@ -122,14 +125,15 @@ $>
 > `-o` - connection
 
 ---
-4. Result:
+4. Solution :
 
 ```find . -name "#*" -print -delete -o -name "*#" -delete -print -o -name "*~" -delete -print```
+```find . -name -type f \(-name "*#" -o -name "#*#") -print -delete```
 
 ## Exercise 03 : find_sh
 
 ---
-1. Result:
+1. Solution:
 
 ``` find . "*.sh" -print | awk -F "." '/.sh/{ print $2 }' | awk -F "/" '{ print $2 }' ```
 
