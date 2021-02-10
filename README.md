@@ -468,12 +468,12 @@ int	main(void)
 1. Task:
 
 > Create a function that returns the factorial of the number passed as parameter.
-> Here's how it should be prototyoes :
+> Here's how it should be prototyped :
 
 ```c
 int ft_recursive_factorial(int nb);
 ```
-> [CS50 course explaining this topic in details](https://www.youtube.com/watch?v=mz6tAJMVmfM&ab_channel=CS50)
+[CS50 course explaining this topic in details](https://www.youtube.com/watch?v=mz6tAJMVmfM&ab_channel=CS50)
 ---
 3. Result:
 
