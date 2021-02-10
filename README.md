@@ -559,9 +559,9 @@ int	ft_strlen(char *str)
 	len = 0;
 	while (str[len] != '\0')
     {
-      len++;
-    }
-  return(len);
+		len++;
+	}
+	return(len);
 }
 ```
 
@@ -586,6 +586,8 @@ int	main()
 ## Exercise 17 : ft_strcmp
 
 1. About strcmp:
+
+> man strcmp
 
 ``` bash
 DESCRIPTION
