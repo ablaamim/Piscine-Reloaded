@@ -97,8 +97,9 @@ $>
 ---
 1. Result:
 
-`z[enter]
+`z
 `
+
 2. Solution :
 
 > echo "Z" > z
@@ -128,6 +129,7 @@ $>
 4. Solution :
 
 ```find . -name "#*" -print -delete -o -name "*#" -delete -print -o -name "*~" -delete -print```
+
 ```find . -name -type f \(-name "*#" -o -name "#*#") -print -delete```
 
 ## Exercise 03 : find_sh
