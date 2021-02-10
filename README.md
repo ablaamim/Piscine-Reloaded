@@ -430,19 +430,19 @@ void ft_div_mod(int a, int b, int *div, int *mod)
 ```c
 int ft_iterative_factorial(int nb)
 {
-	int count;
+	int product;
 
-	if (count > 12)
+	if (nb > 12)
 		return (0);
-	if (count < 0)
+	if (nb < 0)
 		return (0);
-	count = 1;
+	product = 1;
 	while(nb >= 1)
 	{
-		count = count * nb;
+		product = product * nb;
 		nb--;
 	}
-	return (count);
+	return (product);
 }
 ```
 ---
@@ -467,10 +467,11 @@ int	main(void)
 
 1. Task:
 
-> Reproduce the behavior of the function strlen (man strlen).
-> Here’s how it should be prototyped:
+> Create a function that returns the factorial of the number passed as parameter.
+> Here's how it should be prototyoes :
+
 ```c
- int ft_strlen(char *str);
+int ft_recursive_factorial(int nb);
 ```
 
 ---
