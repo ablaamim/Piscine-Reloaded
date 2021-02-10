@@ -516,7 +516,7 @@ int ft_sqrt(int nb);
 
 ```c
 
-int ft_sqrt(int nb)
+int	ft_sqrt(int nb)
 {
 	int sqrt;
 
@@ -552,14 +552,14 @@ void	ft_putstr(char *str)
 Classic:
 
 ``` c
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-  int len = 0;
+	int len;
 
-  while (*str)
+	len = 0;
+	while (str[len] != '\0')
     {
       len++;
-      str++;
     }
   return(len);
 }
@@ -568,15 +568,20 @@ int ft_strlen(char *str)
 Check this:
 
 ```c
-int main()
+int	main()
 {
-  char str[] = "Hello world";
-  printf("Len of %s = %d\n", str, ft_strlen(str));
-  return(0);
+	int i;
+
+	i = 0;
+	char str[] = "Hello world";
+	ft_putstr(str);
+		ft_putchar('\n');
+	i = ft_strlen(i);
+	ft_putnbr(i);
+		ft_putchar('\n');
+	return(0);
 }
 ```
-
-> p.s., don't remember about: `#include <stdio.h>`, if you want check this exercize
 
 ## Exercise 17 : ft_strcmp
 

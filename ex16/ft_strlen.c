@@ -6,18 +6,18 @@
 /*   By: alaamimi <alaamimi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 17:51:25 by alaamimi          #+#    #+#             */
-/*   Updated: 2021/02/10 17:52:43 by alaamimi         ###   ########.fr       */
+/*   Updated: 2021/02/10 18:09:46 by alaamimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strlen(char *str)
 {
-	int cmpt;
+	int len;
 
-	cmpt = 0;
-	while (str[cmpt] != '\0')
+	len = 0;
+	while (str[len] != '\0')
 	{
-		cmpt++;
+		len++;
 	}
-	return (cmpt);
+	return (len);
 }
