@@ -185,12 +185,16 @@ void ft_putchar(char c)
 3. Result:
 
 ```c
-void ft_print_alphabet(void)
+void	ft_print_alphabet(void)
 {
-  int i = 97;
-  while (i >= 97 && i <= 122)
-    ft_putchar(i++);
-  ft_putchar('\n');
+	char ltr;
+
+	ltr = 'a';
+	while (ltr >= 'a' && ltr <= 'z')
+	{
+		ft_putchar(ltr);
+		ltr++;
+	}
 }
 ```
 
@@ -211,12 +215,15 @@ void ft_print_alphabet(void)
 3. Result:
 
 ``` c
-void ft_print_numbers(void)
+void	ft_print_numbers(void)
 {
-  int i = 48;
-  while (i >=47 && i <= 57)
-    ft_putchar(i++);
-  ft_putchar('\n');
+	char nbr;
+
+	nbr = '0';
+	while (nbr >= '0' && nbr <= '9')
+	{
+		ft_putchar(nbr);
+		nbr++;
 }
 ```
 
@@ -230,14 +237,12 @@ void ft_print_numbers(void)
 2. Result:
 
 ```c
-void ft_is_negative(int n)
+void	ft_is_negative(int n)
 {
-  if (n < 0)
-    ft_putchar('N');
-  else if (n > 0)
-    ft_putchar('P');
-  else
-    ft_putchar('P');
+	if (n < 0)
+		ft_putchar('N');
+	else
+		ft_putchar('P');
 }
 ```
 
