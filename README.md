@@ -263,7 +263,7 @@ To test this program:
 > First we print the value of i, then print the value passed to the pointer.
 
 ```c 
-int main(void)
+int	main(void)
 {
 	int i;
 	int *nbr;
@@ -294,7 +294,7 @@ ft_ft.c:14:9: warning: incompatible integer to pointer conversion passing 'int' 
 3. Solution :
 
 ```c
-void ft_ft(int *nbr)
+void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
@@ -313,7 +313,7 @@ void ft_ft(int *nbr)
 To test this program :
 
 ```c
-int main()
+int	main()
 {
 	int nb1;
 	int nb2;
@@ -341,7 +341,7 @@ int main()
 3. Solution :
 
 ```c
-void ft_swap(int *a, int *b)
+void	ft_swap(int *a, int *b)
 {
   int tmp;
   tmp = *a;
@@ -370,7 +370,7 @@ void ft_swap(int *a, int *b)
 
 2.1 to test this program:
 ```c
-int main(void)
+int	main(void)
 {
 	int a;
 	int b;
@@ -402,7 +402,7 @@ int main(void)
 3. Result
 
 ```c
-void ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	*div = a / b;
 	*mod = a % b;
@@ -433,7 +433,7 @@ void ft_div_mod(int a, int b, int *div, int *mod)
 3. Result:
 
 ```c
-int ft_iterative_factorial(int nb)
+int	ft_iterative_factorial(int nb)
 {
 	int product;
 
@@ -483,7 +483,7 @@ int ft_recursive_factorial(int nb);
 3. Result:
 
 ```c
-int ft_recursive_factorial(int nb)
+int	ft_recursive_factorial(int nb)
 {
 	if (nb == 0)
 		return(1);
@@ -539,10 +539,13 @@ Classic:
 ```c
 #include <unistd.h>
 
-void ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
 	while (*str != '\0')
-		write(1, str++, 1);
+	{
+		ft_putchar(*str);
+		*str++;
+	}
 }
 ```
 ## Exercise 16 : ft_strlen
