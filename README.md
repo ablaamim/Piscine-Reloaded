@@ -473,7 +473,7 @@ int	main(void)
 ```c
 int ft_recursive_factorial(int nb);
 ```
-[CS50 course explaining this topic in details](https://www.youtube.com/watch?v=mz6tAJMVmfM&ab_channel=CS50)
+> [CS50 course explaining this topic in details](https://www.youtube.com/watch?v=mz6tAJMVmfM&ab_channel=CS50)
 ---
 3. Result:
 
