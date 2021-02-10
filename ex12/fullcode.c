@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   fullcode.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Alaamimi <Alaamimi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: alaamimi <alaamimi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/09 18:45:40 by Alaamimi          #+#    #+#             */
-/*   Updated: 2021/02/10 13:30:35 by root             ###   ########.fr       */
+/*   Created: 2021/02/10 13:45:20 by alaamimi          #+#    #+#             */
+/*   Updated: 2021/02/10 13:58:59 by alaamimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include <unistd.h>
 #include <stdlib.h>
@@ -54,11 +55,12 @@ int	ft_iterative_factorial(int nb)
 int	main(void)
 {
 	int i;
-	i = 5;
+	i = 0;
 
 	ft_putnbr(i);
 	ft_putchar('\n');
 	ft_putnbr(ft_iterative_factorial(i));
 	ft_putchar('\n');
+
 	return (EXIT_SUCCESS);
 }

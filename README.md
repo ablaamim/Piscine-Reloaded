@@ -480,21 +480,17 @@ int ft_recursive_factorial(int nb);
 ```c
 int ft_recursive_factorial(int nb)
 {
-  if (nb == 0)
-    return(1);
-  else if (nb < 0 || nb > 12)
-    return(0);
-  else
-    {
-      c = c * nb;
-      ft_recursive_factorial(nb -1);
-    }
-  return (c);
+	if (nb == 0)
+		return(1);
+	else if (nb < 0 || nb > 12)
+		return(0);
+	else
+		return (nb * ft_recursive_factorial(nb - 1));
 }
 ```
 
-> p.s. Check this: `else if (nb < 0 || nb > 12)`, maybe is LYING?
-> p.s.s. use global value.
+> p.s. Check this: `else if (nb < 0 || nb > 12)`, fact function only take positive numbers
+>, also it overflows beyond the size of int once it reaches 12.
 
 ## Exercise 14 : ft_sqrt
 
