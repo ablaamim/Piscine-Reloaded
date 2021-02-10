@@ -518,20 +518,19 @@ int ft_sqrt(int nb);
 
 int ft_sqrt(int nb)
 {
-  int i = 1;
+	int sqrt;
 
-  if (nb < 0 || nb >= 32767)
-    return(0);
-  else
-    {
-      while (i < nb && (i * i) < nb)
-      	    i++;
+	sqrt = 0;
+	while(sqrt <= nb / 2)
+	{
+		if ((sqrt * sqrt) == nb)
+			return (nb);
+		else
+			sqrt++;
     }
-  return (i);
+  return (0);
 }
 ```
-
-> p.s. Rememder about `int` -  ` if (nb < 0 || nb >= 32767)`
 
 ## Exercise 15 : ft_putstr
 
@@ -542,8 +541,8 @@ Classic:
 
 void ft_putstr(char *str)
 {
-  while (*str)
-    write(1, str++, 1);
+	while (*str != '\0')
+		write(1, str++, 1);
 }
 ```
 ## Exercise 16 : ft_strlen
