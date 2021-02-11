@@ -546,7 +546,7 @@ Classic:
 
 ```c
 /*This function displays the string s to the standard output. We do this using
- our ft_putchar function. We start by declaring a i variable i that we
+ our ft_putchar function. We start by declaring a i variable that we
  will use to move through our string. We use a i because it is
  guaranteed to be big enough to contain the size of the biggest object your
  system can handle. This way we can display the absolute biggest string that
