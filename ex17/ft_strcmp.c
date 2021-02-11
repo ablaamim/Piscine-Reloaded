@@ -38,7 +38,7 @@ int	ft_strcmp(char *s1, char *s2)
 		i++;
 
 	
-	/*When it have either found a non matching character or it has reached the 
+	/*When it has either found a non matching character or it has reached the 
 	end of s1 the function should return the difference between the character in position i in
 	 s1 and the character in position i in s2.
 	*/
