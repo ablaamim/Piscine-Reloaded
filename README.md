@@ -919,3 +919,5 @@ int		main(int argc, char **argv)
 ## Exercise 25 : ft_foreach
 ## Exercise 26 : ft_count_if
 ## Exercise 27 : display_file
+
+```
