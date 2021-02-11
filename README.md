@@ -848,7 +848,7 @@ int	main(int argc, char **argv)
 > • Create a program that displays its given arguments sorted by ascii order.
 > • It should display all arguments, except for argv[0].
 > • All arguments should have their own line.
-
+```
 2. result :
 ```c
 #include <unistd.h>
