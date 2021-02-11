@@ -122,7 +122,7 @@ $>
 
 3. We will use next flags:
 > `-print` - verbose output
-> `-delete` - all	know about this, read this, for all information https://rtfm.co.ua/komanda-find-i-eyo-opcii-v-primerax/
+> `-delete` - all
 > `-name` - input your find's name
 > `-exec ls -l {} \;` - more
 > `-o` - connection
