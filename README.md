@@ -808,8 +808,6 @@ int main(int argc, char **argv)
 }
 ```
 
-> p.s. - use `(argc > 1)`, remember about this!
-
 ## Exercise 19 : ft_sort_params
 
 1. Task:
