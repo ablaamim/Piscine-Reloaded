@@ -642,38 +642,95 @@ STRCMP (const char *p1, const char *p2)
 3. Result:
 
 ```c
-int ft_strcmp(char *s1, char *s2)
-{
-  int lenS1 = 0;
-  int lenS2 = 0;
-  while (*s1)
-    {
-      lenS1++;
-      s1++;
-    }
-  while	(*s2)
-    {
-      lenS2++;
-      s2++;
-    }
+/*According to the man this function lexicographically compares the NULL
+  	terminated strings s1 and s2 that are passed into it's parameters. The
+  	function returns an integer greater than, equal to, or less than 0 depending
+  	on whether the string s1 is greater than, equal to, or less than string s2.
+  	The comparison is done using unsigned characters, so that '\200' is greater
+  	than '\0'.*/
 
-  return (lenS2 - lenS1);
+int	ft_strcmp(char *s1, char *s2)
+{
+	/*i will start by creating an index variable i (counter), and making it an unsigned
+	 int in case the input is a  long string. hen i set it equal to 0 to
+	 place the counter at the start of the string inside the while loop.*/
+	
+	unsigned int i;
+
+	i = 1;
+	
+	/*The while loop requires two conditions to be true for it to begin looping
+	  and to continue looping ofc. i the loop to happen as long as i have
+	  not reached the end of the string s1 && i want the loop to happen only
+	  so long as the character at position i in s1 is the same as the character
+	  in postion i in s2. The second we find a difference in the string i want
+	  to compare the difference. */
+	while (s1[i] != '\0' && s1[i] == s2[i])
+	{
+		i++;
+
+	
+	/*When it have either found a non matching character or it has reached the 
+	  end of s1 the function should return the difference between the character in position i in
+	  s1 and the character in position i in s2.
+	*/
+	}
+	return (s1[i] - s2[i]);
 }
+
 ```
 
 > How to check this?
 
+> I debug with all possible cases : (s1 == s2) || (s1 > s2) || (s1 < s2).
+
+> PS : i separated the output with couple of "-" characters and a newline (For output beauty.).
+
 ```c
-int main()
+int	main(void)
 {
-  char str1[] = "Hello world";
-  char str2[] = "World Hello1";
-  printf("%d\n", ft_strcmp(str1, str2));
-  return(0);
+	int i;
+
+	i = '1';
+	char str1[] = "Vlad";
+	char str2[] = "Vlad";
+	write(1, "-----\n", 6);
+	ft_putstr(str1);
+		ft_putchar('\n');
+	ft_putstr(str2);
+		ft_putchar('\n');
+	i = ft_strcmp(str1, str2);
+	ft_putnbr(ft_strcmp(str1, str2));
+		ft_putchar('\n');
+	write(1, "-----\n", 6);
+	
+	char str3[] = "a";
+	char str4[] = "ab";
+	ft_putstr(str3);
+		ft_putchar('\n');
+	ft_putstr(str4);
+		ft_putchar('\n');
+	i = ft_strcmp(str3, str4);
+	ft_putnbr(ft_strcmp(str3, str4));
+		ft_putchar('\n');
+	write(1, "-----\n", 6);
+
+	char str5[] = "ab";
+	char str6[] = "a";
+	ft_putstr(str5);
+		ft_putchar('\n');
+	ft_putstr(str6);
+		ft_putchar('\n');
+	i = ft_strcmp(str5, str6);
+	ft_putnbr(ft_strcmp(str5, str6));
+		ft_putchar('\n');
+	write(1, "-----\n", 6);
+
+	return (EXIT_SUCCESS);
 }
 ```
 
-> p.s., don't remember about: `#include <stdio.h>`, if you want check this exercize
+>
 
 ## Exercise 18 : ft_print_params
 
