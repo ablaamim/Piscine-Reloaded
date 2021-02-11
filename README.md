@@ -773,7 +773,7 @@ int	main(void)
 1. Task:
 
 ```bash
-$>./a.out test1 test2 test3
+$>gcc ft_print_params.c -o ft_print_params && ./ft_print_params test1 test2 test3
 test1 test2
 test3 $>
 ```
@@ -785,27 +785,58 @@ DO IT!
 ```c
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
-  write(1, &c, 1);
+	write(1, &c, 1);
 }
 
-void ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
-  while	(*str)
-    ft_putchar(*str++);
-  ft_putchar('\n');
+	int i;
+
+	i = 0;
+	while(str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
 }
 
-int main(int argc, char **argv)
+void	ft_putnbr(int nb)
 {
-  int i = 1;
-
-  if (argc > 1)
-      while(argv[i])
-          ft_putstr(argv[i++]);
-  return(0);
+	if (nb < 0)
+	{
+		nb = -nb;
+		ft_putchar('-');
+	}
+	if (nb >= 10)
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
+	}
+	if (nb >= 0 && nb < 10)
+		ft_putchar(nb + '0');
 }
+
+int	main(int argc, char **argv)
+{
+	int i;
+
+	i = 1;
+	(void)argc;
+	(void)argv;
+	while (i < argc)
+	{
+		ft_putstr(argv[i]);
+			ft_putchar('\n');
+		i++;
+	}
+	write(1, "Arguments count = ", 20);
+	ft_putnbr(argc);
+	ft_putchar('\n');
+	return (0);
+}
+
 ```
 
 ## Exercise 19 : ft_sort_params
@@ -816,7 +847,7 @@ int main(int argc, char **argv)
 > • We’re dealing with a program here, you should therefore have a function main in your .c file.
 > • Create a program that displays its given arguments sorted by ascii order.
 > • It should display all arguments, except for argv[0].
-> • All arguments have to have their own line.
+> • All arguments should have their own line.
 
 
 
