@@ -937,8 +937,43 @@ Return Value
 The strdup() function returns a pointer to the duplicated string, or NULL if insufficient memory was available.
 ```
 2. function :
+```c
+char	*ft_strdup(char *s1)
+{
+	int		i;
+	char	*dest;
 
+	i = 0;
+	dest = malloc(sizeof(*s1) * ((ft_strlen((char *)s1)) + 1));
+	if (dest == NULL)
+		return (NULL);
+	while (s1[i] != '\0')
+	{
+		dest[i] = s1[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
+}
+```
 3. Test :
+```c
+int main(void)
+{
+	char str[] = "Duplicate me motherfucker";
+
+	ft_putstr(str);
+		ft_putchar('\n');
+	printf("%p\n", str);
+	write(1, "-----\n", 6);
+	ft_strdup(str);
+	ft_putstr(str);
+		ft_putchar('\n');
+	printf("%p\n", str);
+	write(1, "-----\n", 6);
+	return EXIT_SUCCESS;
+}
+```
 ## Exercise 21 : ft_range
 ## Exercise 22 : ft_abs.h
 ## Exercise 23 : ft_point.h
