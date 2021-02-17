@@ -655,9 +655,9 @@ RETURN VALUES
 2. Source of strcmp:
 
 ```c
-/* Compare S1 and S2, returning less than, equal to or
-   greater than zero if S1 is lexicographically less than,
-   equal to or greater than S2.  */
+	/* Compare S1 and S2, returning less than, equal to or
+	greater than zero if S1 is lexicographically less than,
+	equal to or greater than S2.  */
 int	strcmp (const char *p1, const char *p2)
 {
 	const unsigned char *s1 = (const unsigned char *) p1;
@@ -680,12 +680,12 @@ int	strcmp (const char *p1, const char *p2)
 3. Result:
 
 ```c
-/*According to the man this function lexicographically compares the NULL
-  	terminated strings s1 and s2 that are passed into it's parameters. The
-  	function returns an integer greater than, equal to, or less than 0 depending
-  	on whether the string s1 is greater than, equal to, or less than string s2.
-  	The comparison is done using unsigned characters, so that '\200' is greater
-  	than '\0'.*/
+	/*According to the man this function lexicographically compares the NULL
+	terminated strings s1 and s2 that are passed into it's parameters. The
+	function returns an integer greater than, equal to, or less than 0 depending
+	on whether the string s1 is greater than, equal to, or less than string s2.
+	The comparison is done using unsigned characters, so that '\200' is greater
+	than '\0'.*/
 
 int	ft_strcmp(char *s1, char *s2)
 {
@@ -698,19 +698,19 @@ int	ft_strcmp(char *s1, char *s2)
 	i = 1;
 	
 	/*The while loop requires two conditions to be true for it to begin looping
-	  and to continue looping ofc. i the loop to happen as long as i have
-	  not reached the end of the string s1 && i want the loop to happen only
-	  so long as the character at position i in s1 is the same as the character
-	  in postion i in s2. The second we find a difference in the string i want
-	  to compare the difference. */
+	and to continue looping ofc. i the loop to happen as long as i have
+	not reached the end of the string s1 && i want the loop to happen only
+	so long as the character at position i in s1 is the same as the character
+	in postion i in s2. The second we find a difference in the string i want
+	to compare the difference. */
 	while (s1[i] != '\0' && s1[i] == s2[i])
 	{
 		i++;
 
 	
 	/*When it has either found a non matching character or it has reached the 
-	  end of s1 the function should return the difference between the character in position i in
-	  s1 and the character in position i in s2.
+	end of s1 the function should return the difference between the character in position i in
+	s1 and the character in position i in s2.
 	*/
 	}
 	return (s1[i] - s2[i]);
