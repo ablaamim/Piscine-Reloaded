@@ -20,6 +20,8 @@
 > [Piscine Reloaded pdf](https://github.com/Alaamimi/Piscine-Reloaded/blob/master/piscine_reloaded.pdf)
 
 ### This project consists of multiple generic functions that can be used in a lot of situations :
+| Exercises | Task |
+|---        |---   |
 > - Ex00. ls -l in folder should display specific things.
 > - Ex01. Create a file which show Z when displayed with cat command.
 > - Ex02. Find a command line that will search from current directory and any sub-directories files ending with ~ or beginning by #. It will show and delete these. Only one command allowed, no ";" or "&&"
