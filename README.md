@@ -92,7 +92,7 @@ $>
 > [More details in this folder](https://github.com/Alaamimi/Piscine-Reloaded/blob/master/ex00/Readme.md)
 
 ---
-3. Result:
+3. Script:
 
 ```touch -h -t "06012220" test6```
 
@@ -104,7 +104,7 @@ $>
 `z
 `
 
-2. Solution :
+2. Script:
 
 > echo "Z" > z
 
@@ -130,7 +130,7 @@ $>
 > `-o` - connection
 
 ---
-4. Solution :
+4. Script:
 
 ```find . -name "#*" -print -delete -o -name "*#" -delete -print -o -name "*~" -delete -print```
 
@@ -139,7 +139,7 @@ $>
 ## Exercise 03 : find_sh
 
 ---
-1. Solution:
+1. Script:
 
 ``` find . "*.sh" -print | awk -F "." '/.sh/{ print $2 }' | awk -F "/" '{ print $2 }' ```
 
@@ -150,14 +150,14 @@ $>
 2. `man awk`
 
 ---
-4. Result:
+4. Script:
 
 ```ifconfig en0 | grep ether -w | awk -F " " '{ print $2 }'```
 
 ## Exercise 05 : Can you create it ?
 
 ---
-1. Result:
+1. Script:
 
 ```touch '"\?$*’KwaMe’*$?\"'```
 
@@ -168,7 +168,7 @@ $>
 
 > Create a function that displays the alphabet in lowercase, on a single line, by ascending order, starting from the letter ’a’.
 
-2. Classic
+2. Task:
 
 > This function is easier to enter, that would constantly use.
 > void - is NONE type, func - return NONE, but put `char` character
@@ -192,7 +192,7 @@ void ft_putchar(char c)
 > `(i >= 97 && i <= 122)` while i fits the condition
 
 ---
-3. Result:
+3. Function:
 
 ```c
 void	ft_print_alphabet(void)
@@ -222,7 +222,7 @@ void	ft_print_alphabet(void)
 ```
 
 ---
-3. Result:
+3. Function:
 
 ``` c
 void	ft_print_numbers(void)
@@ -244,7 +244,7 @@ void	ft_print_numbers(void)
 > Create a function that displays ’N’ or ’P’ depending on the integer’s sign entered as a parameter. If n is negative, display ’N’. If n is positive or null, display ’P’.
 
 ---
-2. Result:
+2. Function:
 
 ```c
 void	ft_is_negative(int n)
@@ -266,7 +266,7 @@ void	ft_is_negative(int n)
 
 > [Check this video about Pointers](https://www.youtube.com/watch?v=XISnO2YhnsY&ab_channel=CS50)
 
-To test this program:
+2. Test:
 
 > Use ft_putnbr(); function to display numbers passed as parameter.
 
@@ -301,7 +301,7 @@ ft_ft.c:14:9: warning: incompatible integer to pointer conversion passing 'int' 
 > This message was displayed, because we did not insert a pointer to the function
 
 ---
-3. Solution :
+3. Function :
 
 ```c
 void	ft_ft(int *nbr)
@@ -320,7 +320,7 @@ void	ft_ft(int *nbr)
 > ``` void ft_swap(int *a, int *b);```
 
 
-To test this program :
+2. Test:
 
 ```c
 int	main()
@@ -348,7 +348,7 @@ int	main()
 ```
 
 ---
-3. Solution :
+3. Function :
 
 ```c
 void	ft_swap(int *a, int *b)
@@ -378,7 +378,7 @@ void	ft_swap(int *a, int *b)
 | Division      | a / b         | `K::operator /(S b);`  |
 | Modulo        | a % b         | `R K::operator %(S b);`|
 
-2.1 to test this program:
+2. Test:
 ```c
 int	main(void)
 {
@@ -409,7 +409,7 @@ int	main(void)
 ```
 
 ---
-3. Result
+3. Function :
 
 ```c
 void	ft_div_mod(int a, int b, int *div, int *mod)
@@ -440,7 +440,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 ```
 
 ---
-3. Result:
+3. Function:
 
 ```c
 int	ft_iterative_factorial(int nb)
@@ -490,7 +490,7 @@ int ft_recursive_factorial(int nb);
 ```
 > [CS50 course explaining this topic in details](https://www.youtube.com/watch?v=mz6tAJMVmfM&ab_channel=CS50)
 ---
-3. Result:
+3. Function:
 
 ```c
 int	ft_recursive_factorial(int nb)
@@ -522,7 +522,7 @@ int ft_sqrt(int nb);
 
 ---
 
-3. Result:
+3. Function:
 
 ```c
 
@@ -544,7 +544,7 @@ int	ft_sqrt(int nb)
 
 ## Exercise 15 : ft_putstr
 
-Classic:
+Function:
 
 ```c
 /*This function displays the string s to the standard output. We do this using
@@ -574,7 +574,7 @@ void	ft_putstr(char *str)
 }
 ```
 
-How to compile this up ?
+Function :
 ```c
 int	main(void)
 {
@@ -596,7 +596,11 @@ int	main(void)
 ```
 ## Exercise 16 : ft_strlen
 
-Classic:
+1. Task :
+
+Reproduce the behavior of the function strlen.
+
+2. Function:
 
 ``` c
 int	ft_strlen(char *str)
@@ -612,7 +616,7 @@ int	ft_strlen(char *str)
 }
 ```
 
-Check this:
+3. Test:
 
 ```c
 int	main()
@@ -632,7 +636,7 @@ int	main()
 
 ## Exercise 17 : ft_strcmp
 
-1. About strcmp:
+1. strcmp string.h function:
 
 > man strcmp
 
@@ -655,9 +659,9 @@ RETURN VALUES
 2. Source of strcmp:
 
 ```c
-	/* Compare S1 and S2, returning less than, equal to or
+	/*Compare S1 and S2, returning less than, equal to or
 	greater than zero if S1 is lexicographically less than,
-	equal to or greater than S2.  */
+	equal to or greater than S2.*/
 int	strcmp (const char *p1, const char *p2)
 {
 	const unsigned char *s1 = (const unsigned char *) p1;
@@ -677,7 +681,7 @@ int	strcmp (const char *p1, const char *p2)
 
 > Note this: return only value c1 - c2;
 
-3. Result:
+3. Function:
 
 ```c
 	/*According to the man this function lexicographically compares the NULL
@@ -780,9 +784,7 @@ test1 test2
 test3 $>
 ```
 
-DO IT!
-
-2. Result:
+2. Function:
 
 ```c
 #include <unistd.h>
@@ -851,7 +853,7 @@ int	main(int argc, char **argv)
 > • It should display all arguments, except for argv[0].
 > • All arguments should have their own line.
 ```
-2. result :
+2. Function :
 ```c
 #include <unistd.h>
 
@@ -914,6 +916,28 @@ int		main(int argc, char **argv)
 ```
 
 ## Exercise 20 : ft_strdup
+
+1.  task:
+```
+Reproduce the behavior of the function strdup (man strdup).
+```
+```bash
+
+> man strdup:
+
+Description
+The strdup() function returns a pointer to a new string which is a duplicate of the string s. Memory for the new string is obtained with malloc(3), and can be freed with free(3).
+
+The strndup() function is similar, but only copies at most n bytes. If s is longer than n, only n bytes are copied, and a terminating null byte ('\0') is added.
+
+strdupa() and strndupa() are similar, but use alloca(3) to allocate the buffer. They are only available when using the GNU GCC suite, and suffer from the same limitations described in alloca(3).
+
+Return Value
+The strdup() function returns a pointer to the duplicated string, or NULL if insufficient memory was available.
+```
+2. function :
+
+3. Test :
 ## Exercise 21 : ft_range
 ## Exercise 22 : ft_abs.h
 ## Exercise 23 : ft_point.h
