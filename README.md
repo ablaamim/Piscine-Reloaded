@@ -920,10 +920,11 @@ int		main(int argc, char **argv)
 1.  task:
 ```
 Reproduce the behavior of the function strdup (man strdup).
+
 ```
 ```bash
 
-> man strdup:
+> MAN STRDUP:
 
 Description
 The strdup() function returns a pointer to a new string which is a duplicate of the string s. Memory for the new string is obtained with malloc(3), and can be freed with free(3).
