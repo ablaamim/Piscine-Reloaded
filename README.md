@@ -981,7 +981,7 @@ int main(void)
 		ft_putchar('\n');
 	printf("%p\n", str);
 	write(1, "-----\n", 6);
-	return EXIT_SUCCESS;
+	return (EXIT_SUCCESS);
 }
 ```
 ## Exercise 21 : ft_range
