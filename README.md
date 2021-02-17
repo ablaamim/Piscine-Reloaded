@@ -24,15 +24,15 @@
 |---        |---   |
 | Ex00  | ls -l in folder should display specific things. |
 | Ex01 |Create a file which show Z when displayed with cat command. |
-> - Ex02. Find a command line that will search from current directory and any sub-directories files ending with ~ or beginning by #. It will show and delete these. Only one command allowed, no ";" or "&&"
-> - Ex03. Find a command line that will search from current directory and any sub-directories files ending by ".sh", displaying only their name without ".sh"
-> - Ex04. Write a command line that displays MAC adresses from your machine.
-> - Ex05. Create a file containing ONLY "42", named "\?$\*'KwaMe'\*$?\"
-> - Ex06. void ft_print_alphabet(void); Show the alphabet in lowercase a > z.
-> - Ex07. void ft_print_numbers(void); Write all numbers on the same line 1 > 9.
-> - Ex08. void ft_is_negative(int n); Return N when n is negative or P when it is positive (0 is positive).
-> - Ex09. void ft_ft(int \*nbr); Give the \*nbr pointer the value 42.
-> - Ex10. void ft_swap(int \*a, int \*b); Swap integers values using their adresses.
+| Ex02 | Find a command line that will search from current directory and any sub-directories files ending with ~ or beginning by #. It will show and delete these. Only one command allowed, no ";" or "&&" |
+| Ex03 | Find a command line that will search from current directory and any sub-directories files ending by ".sh", displaying only their name without ".sh" |
+| Ex04 | Write a command line that displays MAC adresses from your machine. |
+| Ex05 | Create a file containing ONLY "42", named "\?$\*'KwaMe'\*$?\". |
+| Ex06 | void ft_print_alphabet(void); Show the alphabet in lowercase a > z. |
+| Ex07 | void ft_print_numbers(void); Write all numbers on the same line 1 > 9. |
+| Ex08 | void ft_is_negative(int n); Return N when n is negative or P when it is positive (0 is positive). |
+| Ex09 | void ft_ft(int \*nbr); Give the \*nbr pointer the value 42. |
+| Ex10 | void ft_swap(int \*a, int \*b); Swap integers values using their adresses. |
 > - Ex11. void ft_div_mod(int a, int b, int \*div, int \*mod); Divide a by b and store at \*div, store the rest at \*mod
 > - Ex12. int ft_iterative_factorial(int nb); Iterative function that returns a number, result of factorial from nb.
 > - Ex13. int ft_recursive_factorial(int nb); Returns the factorial of nb, recursively.
