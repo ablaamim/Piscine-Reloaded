@@ -729,6 +729,11 @@ int	ft_strcmp(char *s1, char *s2)
 > PS : i separated the output with couple of "-" characters and a newline (For output beauty.).
 
 ```c
+void	ft_putchar(char c);
+void	ft_pustr(char *str);
+void	ft_putnbr(int nb);
+int	ft_ft_strcmp(char *s1, char *s2);
+
 int	main(void)
 {
 	int i;
@@ -938,18 +943,18 @@ The strdup() function returns a pointer to the duplicated string, or NULL if ins
 ```
 2. function :
 ```c
-char	*ft_strdup(char *s1)
+char	*ft_strdup(char *src)
 {
 	int		i;
 	char	*dest;
 
 	i = 0;
-	dest = malloc(sizeof(*s1) * ((ft_strlen((char *)s1)) + 1));
+	dest = malloc(sizeof(*src) * ((ft_strlen((char *)src)) + 1));
 	if (dest == NULL)
 		return (NULL);
-	while (s1[i] != '\0')
+	while (src[i] != '\0')
 	{
-		dest[i] = s1[i];
+		dest[i] = src[i];
 		i++;
 	}
 	dest[i] = '\0';
@@ -958,6 +963,11 @@ char	*ft_strdup(char *s1)
 ```
 3. Test :
 ```c
+void	ft_putchar(char c);
+void	ft_pustr(char *str);
+int	ft_strlen(char *str);
+int	*ft_strdup(char *src);
+
 int main(void)
 {
 	char str[] = "Duplicate me motherfucker";
