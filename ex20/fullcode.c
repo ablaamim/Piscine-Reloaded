@@ -43,18 +43,18 @@ int ft_strlen(char *str)
 	return(len);
 }
 
-char	*ft_strdup(char *s1)
+char	*ft_strdup(char *src)
 {
 	int		i;
 	char	*dest;
 
 	i = 0;
-	dest = malloc(sizeof(*s1) * ((ft_strlen((char *)s1)) + 1));
+	dest = malloc(sizeof(*src) * ((ft_strlen((char *)src)) + 1));
 	if (dest == NULL)
 		return (NULL);
-	while (s1[i] != '\0')
+	while (src[i] != '\0')
 	{
-		dest[i] = s1[i];
+		dest[i] = src[i];
 		i++;
 	}
 	dest[i] = '\0';
