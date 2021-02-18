@@ -1,4 +1,4 @@
-# Piscine Reloaded :
+# :books: Piscine Reloaded :
 
 > This is the Piscine Reloaded project @ 1337 (42 Network).
 
