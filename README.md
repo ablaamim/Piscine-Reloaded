@@ -57,7 +57,7 @@
 
 ## Exercise 00 : Oh yeah, mooore...
 
-1. Task:
+1. Task :
 
 ```
 $> ls -l
@@ -92,19 +92,19 @@ $>
 > [More details in this folder](https://github.com/Alaamimi/Piscine-Reloaded/blob/master/ex00/Readme.md)
 
 ---
-3. Script:
+3. Script :
 
 ```touch -h -t "06012220" test6```
 
 ## Exercise 01 : Z
 
 ---
-1. Result:
+1. Test :
 
 `z
 `
 
-2. Script:
+2. Script :
 
 > echo "Z" > z
 
@@ -130,7 +130,7 @@ $>
 > `-o` - connection
 
 ---
-4. Script:
+4. Script :
 
 ```find . -name "#*" -print -delete -o -name "*#" -delete -print -o -name "*~" -delete -print```
 
@@ -139,7 +139,7 @@ $>
 ## Exercise 03 : find_sh
 
 ---
-1. Script:
+1. Script :
 
 ``` find . "*.sh" -print | awk -F "." '/.sh/{ print $2 }' | awk -F "/" '{ print $2 }' ```
 
@@ -150,25 +150,25 @@ $>
 2. `man awk`
 
 ---
-4. Script:
+4. Script :
 
 ```ifconfig en0 | grep ether -w | awk -F " " '{ print $2 }'```
 
 ## Exercise 05 : Can you create it ?
 
 ---
-1. Script:
+1. Script :
 
 ```touch '"\?$*’KwaMe’*$?\"'```
 
 > p.s. Simple - `''` or `echo 42 > '"\?$*’KwaMe’*$?\"'`
 
 ## Exercise 06 : ft_print_alphabet
-1. Task:
+1. Task :
 
 > Create a function that displays the alphabet in lowercase, on a single line, by ascending order, starting from the letter ’a’.
 
-2. Task:
+2. Task :
 
 > This function is easier to enter, that would constantly use.
 > void - is NONE type, func - return NONE, but put `char` character
@@ -192,7 +192,7 @@ void ft_putchar(char c)
 > `(i >= 97 && i <= 122)` while i fits the condition
 
 ---
-3. Function:
+3. Function :
 
 ```c
 void	ft_print_alphabet(void)
@@ -210,7 +210,7 @@ void	ft_print_alphabet(void)
 
 ## Exercise 07 : ft_print_numbers
 
-1. Task:
+1. Task :
 
 > Create a function that displays all digits, on a single line, by ascending order.
 
@@ -239,7 +239,7 @@ void	ft_print_numbers(void)
 
 ## Exercise 08: ft_is_negative
 
-1. Task:
+1. Task :
 
 > Create a function that displays ’N’ or ’P’ depending on the integer’s sign entered as a parameter. If n is negative, display ’N’. If n is positive or null, display ’P’.
 
@@ -258,7 +258,7 @@ void	ft_is_negative(int n)
 
 ## Exercise 09 : ft_ft 
 
-1. Task:
+1. Task :
 
 > Create a function that takes a pointer to int as a parameter, and sets the value "42" to that int.
 
@@ -289,7 +289,7 @@ int	main(void)
 }
 ```
 
-Common mistake:
+Common mistake :
 
 ```bash
 ft_ft.c:14:9: warning: incompatible integer to pointer conversion passing 'int' to
@@ -312,7 +312,7 @@ void	ft_ft(int *nbr)
 
 ## Exercise 10 : ft_swap
 
-1. Task:
+1. Task :
 
 > Create a function that swaps the value of two integers whose addresses are entered as parameters.
 
@@ -320,7 +320,7 @@ void	ft_ft(int *nbr)
 > ``` void ft_swap(int *a, int *b);```
 
 
-2. Test:
+2. Test :
 
 ```c
 int	main()
@@ -362,7 +362,7 @@ void	ft_swap(int *a, int *b)
 
 ## Exercise 11 : ft_div_mod
 
-1. Task:
+1. Task :
 
 > Create a function ft_div_mod prototyped like this :
 >	`void ft_div_mod(int a, int b, int *div, int *mod);`
@@ -378,7 +378,7 @@ void	ft_swap(int *a, int *b)
 | Division      | a / b         | `K::operator /(S b);`  |
 | Modulo        | a % b         | `R K::operator %(S b);`|
 
-2. Test:
+2. Test :
 ```c
 int	main(void)
 {
@@ -421,7 +421,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 
 ## Exercise 12 : ft_iterative_factorial
 
-1. Task:
+1. Task :
 
 > Create an iterated function that returns a number. This number is the result of a factorial operation based on the number given as a parameter.
 
@@ -432,7 +432,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 
 > Your function must return its result in less than two seconds.
 
-2. About factorial:
+2. About factorial :
 
 ```math
 7! = 1 * 2 * 3 * 4 * 5 * 6 * 7
@@ -440,7 +440,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 ```
 
 ---
-3. Function:
+3. Function :
 
 ```c
 int	ft_iterative_factorial(int nb)
@@ -461,7 +461,7 @@ int	ft_iterative_factorial(int nb)
 }
 ```
 ---
-4. Test:
+4. Test :
 
 ```c
 int	main(void)
@@ -480,7 +480,7 @@ int	main(void)
 ```
 ## Exercise 13 : ft_recursive_factorial
 
-1. Task:
+1. Task :
 
 > Create a function that returns the factorial of the number passed as parameter.
 > Here's how it should be prototyped :
@@ -490,7 +490,7 @@ int ft_recursive_factorial(int nb);
 ```
 > [CS50 course explaining this topic in details](https://www.youtube.com/watch?v=mz6tAJMVmfM&ab_channel=CS50)
 ---
-3. Function:
+3. Function :
 
 ```c
 int	ft_recursive_factorial(int nb)
@@ -544,7 +544,7 @@ int	ft_sqrt(int nb)
 
 ## Exercise 15 : ft_putstr
 
-Function:
+1. Classic problem :
 
 ```c
 /*This function displays the string s to the standard output. We do this using
@@ -574,7 +574,7 @@ void	ft_putstr(char *str)
 }
 ```
 
-Function :
+2. Function :
 ```c
 int	main(void)
 {
@@ -600,7 +600,7 @@ int	main(void)
 
 Reproduce the behavior of the function strlen.
 
-2. Function:
+2. Function :
 
 ``` c
 int	ft_strlen(char *str)
@@ -636,7 +636,7 @@ int	main()
 
 ## Exercise 17 : ft_strcmp
 
-1. strcmp string.h function:
+1. strcmp string.h function :
 
 > man strcmp
 
@@ -656,7 +656,7 @@ RETURN VALUES
      unsigned characters, so that `\200' is greater than `\0'.
 ```
 
-2. Source of strcmp:
+2. Source of strcmp :
 
 ```c
 	/*Compare S1 and S2, returning less than, equal to or
@@ -681,7 +681,7 @@ int	strcmp (const char *p1, const char *p2)
 
 > Note this: return only value c1 - c2;
 
-3. Function:
+3. Function :
 
 ```c
 	/*According to the man this function lexicographically compares the NULL
@@ -722,7 +722,7 @@ int	ft_strcmp(char *s1, char *s2)
 
 ```
 
-> How to check this?
+> Test :
 
 > I debug with all possible cases : (s1 == s2) || (s1 > s2) || (s1 < s2).
 
@@ -781,7 +781,7 @@ int	main(void)
 
 ## Exercise 18 : ft_print_params
 
-1. Task:
+1. Task :
 
 ```bash
 $>gcc ft_print_params.c -o ft_print_params && ./ft_print_params test1 test2 test3
@@ -789,7 +789,7 @@ test1 test2
 test3 $>
 ```
 
-2. Function:
+2. Function :
 
 ```c
 #include <unistd.h>
@@ -850,7 +850,7 @@ int	main(int argc, char **argv)
 
 ## Exercise 19 : ft_sort_params
 
-1. Task:
+1. Task :
 
 ```
 > • We’re dealing with a program here, you should therefore have a function main in your .c file.
@@ -922,7 +922,7 @@ int		main(int argc, char **argv)
 
 ## Exercise 20 : ft_strdup
 
-1.  task:
+1.  task :
 ```
 Reproduce the behavior of the function strdup (man strdup).
 
@@ -985,6 +985,12 @@ int main(void)
 }
 ```
 ## Exercise 21 : ft_range
+
+1. Task :
+
+2. Function :
+
+3. Test :
 ## Exercise 22 : ft_abs.h
 ## Exercise 23 : ft_point.h
 ## Exercise 24 : Makefile
