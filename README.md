@@ -7,15 +7,15 @@
 <img src = "https://sm.mashable.com/t/mashable_in/fun/t/the-here-w/the-here-we-go-again-meme-is-perfect-for-every-frustrating-s_kgv8.960.png">
 
 
-### Objectives :
+### :dart: Objectives :
 > - Reviewing.
 > - Basics of programming.
-### Skills :
+### :floppy_disk: Skills :
 > - Imperative programming
 > - Unix
 > - Rigor
 
-# Subject :
+# :books: Subject :
 
 > [Piscine Reloaded pdf](https://github.com/Alaamimi/Piscine-Reloaded/blob/master/piscine_reloaded.pdf)
 
@@ -57,7 +57,7 @@
 
 ## Exercise 00 : Oh yeah, mooore...
 
-1. Task :
+1. :books: Task :
 
 ```
 $> ls -l
@@ -72,7 +72,7 @@ lrwxr-xr-x  1 login  wheel   5 Jun  1 22:20 test6 -> test0
 $>
 ```
 
-2. Check `man touch`
+2. :books: Check `man touch` :
 
 ```
 -t      Change the access and modification times to the specified time instead of the current time of day.  The argument is of the form
@@ -92,14 +92,14 @@ $>
 > [More details in this folder](https://github.com/Alaamimi/Piscine-Reloaded/blob/master/ex00/Readme.md)
 
 ---
-3. Script :
+3. :floppy_disk: Script :
 
 ```touch -h -t "06012220" test6```
 
 ## Exercise 01 : Z
 
 ---
-1. Test :
+1. :beetle: Test && Debug :
 
 `z
 `
