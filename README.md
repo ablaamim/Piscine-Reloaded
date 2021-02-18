@@ -991,11 +991,51 @@ int main(void)
 2. Function :
 
 3. Test :
+
 ## Exercise 22 : ft_abs.h
+
+1. Task :
+
+2. Function :
+
+3. Test :
+
 ## Exercise 23 : ft_point.h
+
+1. Task :
+
+2. Function :
+
+3. Test :
+
 ## Exercise 24 : Makefile
+
+1. Task :
+
+2. Function :
+
+3. Test :
+
 ## Exercise 25 : ft_foreach
+
+1. Task :
+
+2. Function :
+
+3. Test :
+
 ## Exercise 26 : ft_count_if
+
+1. Task :
+
+2. Function :
+
+3. Test :
+
 ## Exercise 27 : display_file
 
-```
+1. Task :
+
+2. Function :
+
+3. Test :
