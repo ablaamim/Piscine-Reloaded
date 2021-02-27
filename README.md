@@ -170,7 +170,7 @@ $>
 
 > Create a function that displays the alphabet in lowercase, on a single line, by ascending order, starting from the letter ’a’.
 
-2. :beetle: Task :
+2. :dart: Task :
 
 > This function is easier to enter, that would constantly use.
 > void - is NONE type, func - return NONE, but put `char` character
@@ -194,7 +194,7 @@ void ft_putchar(char c)
 > `(i >= 97 && i <= 122)` while i fits the condition
 
 ---
-3. Function :
+3. :dart: Function :
 
 ```c
 void	ft_print_alphabet(void)
@@ -208,6 +208,22 @@ void	ft_print_alphabet(void)
 		ltr++;
 	}
 }
+```
+
+4. :beetle: :wrench: Test && Debug :
+
+```c
+int	main(void)
+{
+	ft_print_alphabet();
+	return (0);
+}
+```
+
+5. :8ball: Expected output :
+
+```c
+> $> abcd...z
 ```
 
 ## Exercise 07 : ft_print_numbers
