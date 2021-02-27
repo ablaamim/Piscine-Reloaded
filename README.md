@@ -201,8 +201,8 @@ void	ft_print_alphabet(void)
 {
 	char ltr;
 
-	ltr = 'a';
-	while (ltr >= 'a' && ltr <= 'z')
+	ltr = 'a'; // ltr = 97;
+	while (ltr <= 'z') // While (ltr <= 122)
 	{
 		ft_putchar(ltr);
 		ltr++;
