@@ -4,7 +4,7 @@
 
 > Review the basics with a set of well-picked assignments from the selection Piscine.
 
-<img src = "https://sm.mashable.com/t/mashable_in/fun/t/the-here-w/the-here-we-go-again-meme-is-perfect-for-every-frustrating-s_kgv8.960.png">
+<img src = "https://sm.mashable.com/t/mashable_in/fun/t/the-here-w/the-here-we-go-again-meme-is-perfect-for-every-frustrating-s_kgv8.960.png" width ="700">
 
 
 ### :dart: Objectives :
@@ -17,7 +17,7 @@
 
 ### :eyes: Old holy graph :
 
-<img src = "https://github.com/Alaamimi/Piscine-Reloaded/blob/master/ress/Screenshot_20210228-005159.jpg">
+<img src = "https://github.com/Alaamimi/Piscine-Reloaded/blob/master/ress/Screenshot_20210228-005159.jpg" width="700">
 
 # :books: Subject :
 
