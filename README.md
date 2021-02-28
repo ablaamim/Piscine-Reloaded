@@ -1,6 +1,6 @@
 # :books: Piscine Reloaded :
 
-> This is the Piscine Reloaded project @ 1337 (42 Network).
+> This is the Piscine Reloaded project @ 1337 (42 Network), it no longer exists in the new graph.
 
 > Review the basics with a set of well-picked assignments from the selection Piscine.
 
@@ -14,6 +14,10 @@
 > - Imperative programming
 > - Unix
 > - Rigor
+
+### :eyes: Old holy graph :
+
+<img src = "">
 
 # :books: Subject :
 
