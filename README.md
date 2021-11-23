@@ -1016,9 +1016,12 @@ int main(void)
 
 • Create a function ft_range which returns an array ofints. This int array should
 contain all values between min and max.
+
 • Min included - max excluded.
+
 • Here’s how it should be prototyped :
 int *ft_range(int min, int max);
+
 • If min´value is greater or equal to max’s value, a null pointer should be returned.
 
 2. Function :
@@ -1105,13 +1108,19 @@ void			set_point(t_point *point);
 1. Task :
 
 • Create the Makefile that’ll compile your libft.a.
+
 • The Makefile will get its source files from the "srcs" directory.
+
 • The Makefile will get its header files from the "includes" directory.
+
 • The lib will be at the root of the exercise.
+
 • The Makefile should also implement the following rules: clean, fclean and re as
 well as all.
+
 • fclean does the equivalent of a make clean and also erases the binary created
 during the make. re does the equivalent of a make fclean followed by a make.
+
 • We’ll only fetch your Makefile and test it with our files. For this exercise, only
 the following 5 mandatory functions of your lib have to be handled : (ft_putchar,
 ft_putstr, ft_strcmp, ft_strlen and ft_swap).
@@ -1144,8 +1153,10 @@ re : fclean ALL
 
 • Create the function ft_foreach which, for a given ints array, applies a function on
 all elements of the array. This function will be applied following the array’s order.
+
 • Here’s how the function should be prototyped :
 void ft_foreach(int *tab, int length, void(*f)(int));
+
 • For example, the function ft_foreach could be called as follows in order to display
 all ints of the array :
 ft_foreach(tab, 1337, &ft_putnbr);
@@ -1171,8 +1182,10 @@ void	ft_foreach(int *tab, int length, void (*f)(int))
 
 • Create a function ft_count_if which will return the number of elements of the
 array that return 1, passed to the function f.
+
 • Here’s how the function should be prototyped :
 int ft_count_if(char **tab, int(*f)(char*));
+
 • The array will be delimited by 0.
 
 
@@ -1201,11 +1214,15 @@ int		ft_count_if(char **tab, int (*f)(char*))
 
 • Create a program called ft_display_file that displays, on the standard output,
 only the content of the file given as argument.
+
 • The submission directory should have a Makefile with the following rules : all,
 clean, fclean. The binary will be called ft_display_file.
+
 • The malloc function is forbidden. You can only do this exercise by declaring a
 fixed-sized array.
+
 • All files given as arguments will be valid.
+
 • Error messages have to be displayed on their reserved output.
 
 2. Function :
