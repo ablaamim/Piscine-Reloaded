@@ -1014,15 +1014,53 @@ int main(void)
 
 1. Task :
 
+• Create a function ft_range which returns an array ofints. This int array should
+contain all values between min and max.
+• Min included - max excluded.
+• Here’s how it should be prototyped :
+int *ft_range(int min, int max);
+• If min´value is greater or equal to max’s value, a null pointer should be returned.
+
 2. Function :
 
+```c
+int   *ft_range(int min, int max)
+{
+	int	*str;
+	int	i;
+
+
+	if (min >= max)
+		return (0);
+	i = 0;
+	max -= min;
+	str = (int *)malloc(sizeof(int) * max);
+	while (i < max)
+	{
+		str[i] = min + i;
+		i++;
+	}
+	return (str);
+}
+```
 3. Test :
 
 ## Exercise 22 : ft_abs.h
 
 1. Task :
 
+• Create a macro ABS which replaces its argument by it absolute value :
+#define ABS(Value)
+
 2. Function :
+```c
+#ifndef FT_ABS_H
+# define FT_ABS_H
+
+# define ABS(Value) ((Value < 0) ? (-Value) : (Value))
+
+#endif
+```
 
 3. Test :
 
@@ -1030,38 +1068,185 @@ int main(void)
 
 1. Task :
 
+• Create a file ft_point.h that’ll compile the following main :
+
+#include "ft_point.h"
+void set_point(t_point *point)
+{
+	point->x = 42;
+	point->y = 21;
+}
+int main(void)
+{
+	t_point point;
+	set_point(&point);
+	return (0);
+}
+
 2. Function :
 
-3. Test :
+```c
+#ifndef FT_POINT_H
+# define FT_POINT_H
+
+typedef	struct	s_point
+{
+	int x;
+	int y;
+}				t_point;
+
+void			set_point(t_point *point);
+
+#endif
+```
 
 ## Exercise 24 : Makefile
 
 1. Task :
 
-2. Function :
+• Create the Makefile that’ll compile your libft.a.
+• The Makefile will get its source files from the "srcs" directory.
+• The Makefile will get its header files from the "includes" directory.
+• The lib will be at the root of the exercise.
+• The Makefile should also implement the following rules: clean, fclean and re as
+well as all.
+• fclean does the equivalent of a make clean and also erases the binary created
+during the make. re does the equivalent of a make fclean followed by a make.
+• We’ll only fetch your Makefile and test it with our files. For this exercise, only
+the following 5 mandatory functions of your lib have to be handled : (ft_putchar,
+ft_putstr, ft_strcmp, ft_strlen and ft_swap).
 
-3. Test :
+2. Function :
+```
+NAME = libft.a
+FLAG = -Wall -Wextra -Werror
+FILES =	srcs/*.c
+OBJ = *.o
+
+ALL: $(NAME)
+
+$(NAME):
+	gcc $(FLAG) -c $(FILES)
+	ar rc $(NAME) $(OBJ)
+
+clean:
+	/bin/rm -f $(OBJ)
+
+fclean : clean
+	/bin/rm -f $(NAME)
+
+re : fclean ALL
+```
 
 ## Exercise 25 : ft_foreach
 
 1. Task :
 
-2. Function :
+• Create the function ft_foreach which, for a given ints array, applies a function on
+all elements of the array. This function will be applied following the array’s order.
+• Here’s how the function should be prototyped :
+void ft_foreach(int *tab, int length, void(*f)(int));
+• For example, the function ft_foreach could be called as follows in order to display
+all ints of the array :
+ft_foreach(tab, 1337, &ft_putnbr);
 
-3. Test :
+2. Function :
+```c
+void	ft_foreach(int *tab, int length, void (*f)(int))
+{
+	int	i;
+
+	i = 0;
+	while (i < length)
+	{
+		f(tab[i]);
+		i++;
+	}
+}
+```
 
 ## Exercise 26 : ft_count_if
 
 1. Task :
 
-2. Function :
+• Create a function ft_count_if which will return the number of elements of the
+array that return 1, passed to the function f.
+• Here’s how the function should be prototyped :
+int ft_count_if(char **tab, int(*f)(char*));
+• The array will be delimited by 0.
 
-3. Test :
+
+2. Function :
+```c
+int		ft_count_if(char **tab, int (*f)(char*))
+{
+	int i;
+	int counter;
+
+	counter = 0;
+	i = 0;
+	while (tab[i] != 0)
+	{
+		if (f(tab[i]) == 1)
+			counter++;
+		i++;
+	}
+	return (counter);
+}
+```
 
 ## Exercise 27 : display_file
 
 1. Task :
 
-2. Function :
+• Create a program called ft_display_file that displays, on the standard output,
+only the content of the file given as argument.
+• The submission directory should have a Makefile with the following rules : all,
+clean, fclean. The binary will be called ft_display_file.
+• The malloc function is forbidden. You can only do this exercise by declaring a
+fixed-sized array.
+• All files given as arguments will be valid.
+• Error messages have to be displayed on their reserved output.
 
-3. Test :
+2. Function :
+```c
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#define BUFF_SIZE 4096
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+void	ft_putstr(char *str)
+{
+	while (*str)
+	{
+		ft_putchar(*str);
+		str++;
+	}
+}
+
+int		main(int argc, char **argv)
+{
+	int		x;
+	int		y;
+	char	buff[BUFF_SIZE + 1];
+
+	if (argc < 2)
+		write(2, "File name missing.\n", 19);
+	else if (argc == 2)
+	{
+		x = open(argv[1], O_RDONLY);
+		y = read(x, buff, BUFF_SIZE);
+		buff[y] = '\0';
+		ft_putstr(buff);
+		close(x);
+	}
+	else
+		write(2, "Too many arguments.\n", 20);
+}
+```
